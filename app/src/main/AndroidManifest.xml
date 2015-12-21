@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".tabbar.TabBarActivity" >
         </activity>
+        <activity android:name=".tabbar.ArrowsActivity"/>
+        <activity android:name=".tabbar.OptionsActivity" />
     </application>
 
 </manifest>
