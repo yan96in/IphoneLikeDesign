@@ -6,6 +6,73 @@ Android平台仿ios设计的UI库，让仿ios开发变得快捷，包括以下�
 #IEditText
 #ITopReacher
 reference:<a href="https://github.com/sakebook/Reachability">Reachability<a/>
+Easy access on top.
+Like a iPhone 6 & 6 Plus.
+
+![image](https://raw.githubusercontent.com/sakebook/Reachability/master/images/demo.gif)
+
+[demo apk](https://raw.githubusercontent.com/sakebook/Reachability/master/apk/demo-debug.apk)
+
+---
+
+## Usage
+Add dependencies
+
+```
+compile 'com.github.sakebook:Reachability:0.2.0@aar'
+```
+
+In Activity `onCreate`
+
+```
+Reachability reachability = new Reachability(this);
+reachability.makeHoverView(Reachability.Position.RIGHT);
+```
+
+## Option
+
+### Use own trigger
+ * `switchBack`
+  * If you call this method, allows you to move the screen.
+  * Animation does not overlap.
+ * `switchHover`
+  * If you call this method, allows you to move the Hover.
+  * Animation does not overlap.
+
+### Show status bar
+ * `canTouchableBackView`
+  * if you call this method, You must write the AndroidManifest.xml the following code.
+
+```AndroidManifest.xml
+...
+<uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+...
+```
+
+```
+reachability.canTouchableBackView(true);
+```
+
+## Custom
+### HoverView custom
+ * `setHoverView`
+ * `setCustomSlideInAnimation`
+ * `setCustomSlideOutAnimation`
+
+```
+// Make Own HoverView. Support only ImageView.
+ImageView view = new ImageView(this);
+view.setBackgroundResource(R.drawable.custom_button_selector);
+view.setScaleType(ImageView.ScaleType.CENTER);
+...
+mReachability = new Reachability(this);
+// Should call before makeHoverView!
+mReachability.setHoverView(view, android.R.drawable.ic_partial_secure, android.R.drawable.ic_secure);
+mReachability.makeHoverView(Reachability.Position.CENTER);
+mReachability.setCustomSlideInAnimation(1000, new AnticipateOvershootInterpolator(), fromLeftAnimation());
+mReachability.setCustomSlideOutAnimation(1000, new AnticipateOvershootInterpolator(), toRightAnimation());
+```
+
 #对话框IAlertView
 reference:<a href="https://github.com/saiwu-bigkoo/Android-AlertView">Android-AlertView<a/>
 仿iOS的AlertViewController
