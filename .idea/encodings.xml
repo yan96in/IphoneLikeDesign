@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/samples/src/main/java/cn/yan96in/sample/topreacher/BackandHoverActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/java/cn/yan96in/sample/topreacher/CustomAnimationActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/java/cn/yan96in/sample/topreacher/DrawerActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/java/cn/yan96in/sample/topreacher/NavigationDrawerFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/java/cn/yan96in/sample/topreacher/TopReacherActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/custom_button_pressed.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/custom_button_selected.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/custom_button_selector.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/drawer_shadow.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/ic_drawer.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/ic_launcher.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/tile.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/tiles.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/activity_back_and_hover.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/activity_custom_animation.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/activity_drawer.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/activity_my.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/fragment_drawer.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/fragment_navigation_drawer.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/menu/custom_animation.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/menu/drawer.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/menu/global.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/menu/my.xml" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

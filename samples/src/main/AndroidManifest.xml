@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.yan96in.sample">
+    <!-- if you call the method "canTouchableBackView" in the iTopReacher,
+    add the permission "EXPAND_STATUS_BAR",
+    and "reachability.canTouchableBackView(true);"in your source code-->
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tabbar.OptionsActivity" />
+        <activity android:name=".tabbar.ArrowsActivity" />
+        <activity android:name=".ui.TabBarActivity" />
+        <activity android:name=".ui.IndexableListViewActivity" />
+        <activity android:name=".ui.IEditTextActivity"/>
+        <!-- top reacher -->
+        <activity
+            android:name=".topreacher.TopReacherActivity"
+            android:label="@string/title_activity_my" />
+        <activity
+            android:name=".topreacher.DrawerActivity"
+            android:label="@string/title_activity_drawer" />
+        <activity
+            android:name=".topreacher.BackandHoverActivity"
+            android:label="@string/title_activity_back_and_hover" />
+        <activity
+            android:name=".topreacher.CustomAnimationActivity"
+            android:label="@string/title_activity_custom_animation" />
+    </application>
+
+</manifest>

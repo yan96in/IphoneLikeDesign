@@ -1,11 +1,14 @@
-package cn.yan96in.sample.ui;
+package cn.yan96in.sample;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import cn.yan96in.sample.R;
+import cn.yan96in.sample.topreacher.TopReacherActivity;
+import cn.yan96in.sample.ui.IEditTextActivity;
+import cn.yan96in.sample.ui.IndexableListViewActivity;
+import cn.yan96in.sample.ui.TabBarActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -20,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          findViewById(R.id.tabbar).setOnClickListener(this);
         findViewById(R.id.indexable_listview).setOnClickListener(this);
         findViewById(R.id.i_edit_text).setOnClickListener(this);
-//        findViewById(R.id.tabbar).setOnClickListener(this);
+        findViewById(R.id.i_top_reacher).setOnClickListener(this);
 //        findViewById(R.id.tabbar).setOnClickListener(this);
 //        findViewById(R.id.tabbar).setOnClickListener(this);
 //        findViewById(R.id.tabbar).setOnClickListener(this);
@@ -39,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.i_edit_text:
                 startActivity(IEditTextActivity.class);
+            case R.id.i_top_reacher:
+                startActivity(TopReacherActivity.class);
         }
     }
 
