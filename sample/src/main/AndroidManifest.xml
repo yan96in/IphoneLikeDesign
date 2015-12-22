@@ -19,6 +19,8 @@
         <activity android:name=".tabbar.ArrowsActivity" />
         <activity android:name=".ui.TabBarActivity" />
         <activity android:name=".ui.IndexableListViewActivity" />
+        <activity android:name=".ui.IEditTextActivity" >
+        </activity>
     </application>
 
 </manifest>

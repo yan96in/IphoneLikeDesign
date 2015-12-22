@@ -15,5 +15,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="IndexableListView"/>
-
+    <Button android:id="@+id/i_edit_text"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IEditText"/>
 </RelativeLayout>

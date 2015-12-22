@@ -10,6 +10,7 @@ import android.widget.TabHost;
 import android.widget.TextView;
 
 //import cn.yan96in.sample.R;
+import cn.yan96in.ildesign.util.ITabbar;
 import cn.yan96in.sample.R;
 import cn.yan96in.sample.tabbar.ArrowsActivity;
 import cn.yan96in.sample.tabbar.OptionsActivity;
@@ -24,27 +25,10 @@ public class TabBarActivity extends TabActivity {
     }
     private void setTabs()
     {
-        addTab("Home", R.drawable.tab_home, ArrowsActivity.class);
-        addTab("Search", R.drawable.tab_search, OptionsActivity.class);
-
-        addTab("Home", R.drawable.tab_home, ArrowsActivity.class);
-        addTab("Search", R.drawable.tab_search, OptionsActivity.class);
+        new ITabbar(this).addTab("Home", R.drawable.tab_home, ArrowsActivity.class);
+        new ITabbar(this).addTab("Search", R.drawable.tab_search, OptionsActivity.class);
+        new ITabbar(this).addTab("Home", R.drawable.tab_home, ArrowsActivity.class);
+        new ITabbar(this).addTab("Search", R.drawable.tab_search, OptionsActivity.class);
     }
 
-    private void addTab(String labelId, int drawableId, Class<?> c)
-    {
-        TabHost tabHost = getTabHost();
-        Intent intent = new Intent(this, c);
-        TabHost.TabSpec spec = tabHost.newTabSpec("tab" + labelId);
-
-        View tabIndicator = LayoutInflater.from(this).inflate(R.layout.tab_indicator, getTabWidget(), false);
-        TextView title = (TextView) tabIndicator.findViewById(R.id.title);
-        title.setText(labelId);
-        ImageView icon = (ImageView) tabIndicator.findViewById(R.id.icon);
-        icon.setImageResource(drawableId);
-
-        spec.setIndicator(tabIndicator);
-        spec.setContent(intent);
-        tabHost.addTab(spec);
-    }
 }

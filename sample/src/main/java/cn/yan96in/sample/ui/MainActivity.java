@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initView() {
          findViewById(R.id.tabbar).setOnClickListener(this);
         findViewById(R.id.indexable_listview).setOnClickListener(this);
-//        findViewById(R.id.tabbar).setOnClickListener(this);
+        findViewById(R.id.i_edit_text).setOnClickListener(this);
 //        findViewById(R.id.tabbar).setOnClickListener(this);
 //        findViewById(R.id.tabbar).setOnClickListener(this);
 //        findViewById(R.id.tabbar).setOnClickListener(this);
@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.indexable_listview:
                 startActivity(IndexableListViewActivity.class);
                 break;
+            case R.id.i_edit_text:
+                startActivity(IEditTextActivity.class);
         }
     }
 

@@ -3,8 +3,5 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <!-- tabbar-->
-    <color name="tabMedium">#2B2B2B</color>
-    <color name="tabDark">#000000</color>
-    <color name="tabTransparent">#10ffffff</color>
+
 </resources>
