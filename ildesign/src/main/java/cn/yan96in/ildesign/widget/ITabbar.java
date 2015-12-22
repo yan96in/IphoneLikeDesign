@@ -1,4 +1,4 @@
-package cn.yan96in.ildesign.util;
+package cn.yan96in.ildesign.widget;
 
 import android.app.Activity;
 import android.app.TabActivity;

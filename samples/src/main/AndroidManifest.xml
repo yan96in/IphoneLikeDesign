@@ -21,7 +21,8 @@
         <activity android:name=".tabbar.ArrowsActivity" />
         <activity android:name=".ui.TabBarActivity" />
         <activity android:name=".ui.IndexableListViewActivity" />
-        <activity android:name=".ui.IEditTextActivity"/>
+        <activity android:name=".ui.IEditTextActivity" />
+
         <!-- top reacher -->
         <activity
             android:name=".topreacher.TopReacherActivity"
@@ -34,6 +35,10 @@
             android:label="@string/title_activity_back_and_hover" />
         <activity
             android:name=".topreacher.CustomAnimationActivity"
+            android:label="@string/title_activity_custom_animation" />
+        <!--alert view-->
+        <activity
+            android:name=".ui.IAlertViewActivity"
             android:label="@string/title_activity_custom_animation" />
     </application>
 
