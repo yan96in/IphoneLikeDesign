@@ -102,7 +102,7 @@ new AlertView("标题", "内容", null, new String[]{"确定"}, null, this,
 
 ## Here is date pick effect by gif
 
-![picker](https://github.com/brucetoo/PickView/datepick.gif)
+![picker](https://raw.githubusercontent.com/brucetoo/PickView/master/datepick.gif)
 
 ##How to use
 > 1. Pick date is even with single step...
