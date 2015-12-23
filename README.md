@@ -1,5 +1,5 @@
 # IphoneLikeDesign
-Android平台仿ios设计的UI库，让仿ios开发变得快捷，包括以下内容：
+Android平台仿ios设计的UI库，让仿ios开发变得快捷，包括以下内容(不断更新中)：
 
 #标签Tabbar
 #索引IndexableListView
@@ -99,13 +99,10 @@ new AlertView("标题", "内容", null, new String[]{"确定"}, null, this,
                 AlertView.Style.Alert, null).show();
 ```
 另外还支持窗口界面拓展，更多操作请下载Demo看。
-#Wheel View
-This is a helper lib for us to pick date or province like IOS system
-WheelView widget.
 
-# Here is date pick effect by gif
+## Here is date pick effect by gif
 
-![picker](./datepick.gif)
+![picker](https://github.com/brucetoo/PickView/datepick.gif)
 
 ##How to use
 > 1. Pick date is even with single step...
@@ -121,14 +118,6 @@ WheelView widget.
                    });
 
   ```
-
-#Dependencies
-
-```java
-
-   compile 'com.brucetoo.pickview:library:1.0.1'
-
-```
 ##TODO
 
 - [ ] add Province pick PopWindow (if i have time)
