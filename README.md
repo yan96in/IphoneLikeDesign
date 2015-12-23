@@ -137,10 +137,6 @@ WheelView widget.
 #THANKS
  [androidWheelView](https://github.com/weidongjian/androidWheelView)
  [PickView](https://github.com/brucetoo/PickView)
-
-#ShotScreen
-#EditTextWithDeleteButton
-#Usage
-#Known Issues
 #Copyright and License
+to be added soon ...
 
