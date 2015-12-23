@@ -1,10 +1,10 @@
 # IphoneLikeDesign
 Android平台仿ios设计的UI库，让仿ios开发变得快捷，包括以下内容：
 
-#标签ITabbar
+#标签Tabbar
 #索引IndexableListView
-#IEditText
-#ITopReacher
+#TextLabel
+#TopReacher
 reference:[Reachability](https://github.com/sakebook/Reachability")
 Easy access on top.
 Like a iPhone 6 & 6 Plus.
@@ -73,7 +73,7 @@ mReachability.setCustomSlideInAnimation(1000, new AnticipateOvershootInterpolato
 mReachability.setCustomSlideOutAnimation(1000, new AnticipateOvershootInterpolator(), toRightAnimation());
 ```
 
-#对话框IAlertView
+#对话框AlertView
 reference:[Android-AlertView](https://github.com/saiwu-bigkoo/Android-AlertView")
 仿iOS的AlertViewController
 几乎完美还原iOS的AlertViewController ，同时支持Alert和ActionSheet模式，每一个细节都是精雕细琢，并把api封装成懒到极致模式，一行代码就可以进行弹窗.
