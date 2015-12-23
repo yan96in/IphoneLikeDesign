@@ -14,9 +14,6 @@ import cn.yan96in.ildesign.util.StringMatcher;
 import cn.yan96in.ildesign.widget.IndexableListView;
 import cn.yan96in.sample.R;
 
-/**
- * Created by 002 on 2015/12/21.
- */
 public class IndexableListViewActivity extends AppCompatActivity{
     private ArrayList<String> mItems;
     private IndexableListView mListView;

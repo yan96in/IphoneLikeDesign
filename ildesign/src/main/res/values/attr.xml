@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
  
-    <declare-styleable name="IEditText">
+    <declare-styleable name="EditText">
         <attr name="hintText" format="string" />
         <attr name="rightLabel" format="string" />
         <attr name="deleteButtonRes" format="reference" />

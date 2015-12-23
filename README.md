@@ -5,7 +5,7 @@ Android平台仿ios设计的UI库，让仿ios开发变得快捷，包括以下�
 #索引IndexableListView
 #IEditText
 #ITopReacher
-reference:<a href="https://github.com/sakebook/Reachability">Reachability<a/><br>
+reference:[Reachability](https://github.com/sakebook/Reachability")
 Easy access on top.
 Like a iPhone 6 & 6 Plus.
 
@@ -74,7 +74,7 @@ mReachability.setCustomSlideOutAnimation(1000, new AnticipateOvershootInterpolat
 ```
 
 #对话框IAlertView
-reference:<a href="https://github.com/saiwu-bigkoo/Android-AlertView">Android-AlertView<a/><br>
+reference:[Android-AlertView](https://github.com/saiwu-bigkoo/Android-AlertView")
 仿iOS的AlertViewController
 几乎完美还原iOS的AlertViewController ，同时支持Alert和ActionSheet模式，每一个细节都是精雕细琢，并把api封装成懒到极致模式，一行代码就可以进行弹窗.
 ## Demo
@@ -99,6 +99,45 @@ new AlertView("标题", "内容", null, new String[]{"确定"}, null, this,
                 AlertView.Style.Alert, null).show();
 ```
 另外还支持窗口界面拓展，更多操作请下载Demo看。
+#Wheel View
+This is a helper lib for us to pick date or province like IOS system
+WheelView widget.
+
+# Here is date pick effect by gif
+
+![picker](./datepick.gif)
+
+##How to use
+> 1. Pick date is even with single step...
+
+  ```java
+
+    DatePickerPopWin pickerPopWin = new DatePickerPopWin(MainActivity.this, new DatePickerPopWin.OnDatePickedListener() {
+                       @Override
+                       public void onDatePickCompleted(int year, int month, int day, String dateDesc) {
+                       //handler the result here
+                           Toast.makeText(MainActivity.this,dateDesc,Toast.LENGTH_SHORT).show();
+                       }
+                   });
+
+  ```
+
+#Dependencies
+
+```java
+
+   compile 'com.brucetoo.pickview:library:1.0.1'
+
+```
+##TODO
+
+- [ ] add Province pick PopWindow (if i have time)
+------
+
+#THANKS
+ [androidWheelView](https://github.com/weidongjian/androidWheelView)
+ [PickView](https://github.com/brucetoo/PickView)
+
 #ShotScreen
 #EditTextWithDeleteButton
 #Usage

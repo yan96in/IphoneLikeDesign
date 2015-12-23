@@ -1,5 +1,4 @@
 package cn.yan96in.ildesign.widget;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,44 +15,40 @@ import android.widget.TableLayout;
 
 import cn.yan96in.ildesign.R;
 
-public class IEditText extends LinearLayout {
+public class TextLabel extends LinearLayout {
     protected EditText editText;
     protected ImageButton clearTextButton;
-
-    public interface TextChangedListener extends TextWatcher {
+    public interface TextChangedListener extends TextWatcher{
     }
-
     TextChangedListener editTextListener = null;
-
     public void addTextChangedListener(TextChangedListener listener) {
         this.editTextListener = listener;
     }
-
-    public IEditText(Context context) {
+    public TextLabel(Context context) {
         super(context);
         //LayoutInflater.from(context).inflate(R.layout.activity_main, this);
     }
 
-    public IEditText(Context context, AttributeSet attrs) {
+    public TextLabel(Context context, AttributeSet attrs) {
         super(context, attrs);
         initViews(context, attrs);
     }
 
-    public IEditText(Context context, AttributeSet attrs, int defStyle) {
+    public TextLabel(Context context, AttributeSet attrs, int defStyle) {
         this(context, attrs);
         initViews(context, attrs);
     }
 
     private void initViews(Context context, AttributeSet attrs) {
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs,
-                R.styleable.IEditText, 0, 0);
+                R.styleable.EditText, 0, 0);
         String hintText;
         int deleteButtonRes;
         try {
             // get the text and colors specified using the names in attrs.xml
-            hintText = a.getString(R.styleable.IEditText_hintText);
+            hintText = a.getString(R.styleable.EditText_hintText);
             deleteButtonRes = a.getResourceId(
-                    R.styleable.IEditText_deleteButtonRes,
+                    R.styleable.EditText_deleteButtonRes,
                     R.drawable.text_field_clear_btn);
 
         } finally {
@@ -127,7 +122,7 @@ public class IEditText extends LinearLayout {
                 LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 1f));
         editText.setHorizontallyScrolling(false);
         editText.setVerticalScrollBarEnabled(true);
-        editText.setGravity(Gravity.LEFT);
+        editText.setGravity(Gravity.LEFT|Gravity.CENTER_VERTICAL);
         editText.setBackground(null);
         editText.setHint(hintText);
         return editText;
@@ -137,6 +132,7 @@ public class IEditText extends LinearLayout {
         clearTextButton = new ImageButton(context);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+
         params.gravity = Gravity.CENTER_VERTICAL;
         clearTextButton.setLayoutParams(params);
         clearTextButton.setBackgroundResource(deleteButtonRes);

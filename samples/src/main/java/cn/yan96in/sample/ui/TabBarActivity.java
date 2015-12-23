@@ -4,7 +4,7 @@ import android.app.TabActivity;
 import android.os.Bundle;
 
 //import cn.yan96in.sample.R;
-import cn.yan96in.ildesign.widget.ITabbar;
+import cn.yan96in.ildesign.widget.Tabbar;
 import cn.yan96in.sample.R;
 import cn.yan96in.sample.tabbar.ArrowsActivity;
 import cn.yan96in.sample.tabbar.OptionsActivity;
@@ -19,10 +19,10 @@ public class TabBarActivity extends TabActivity {
     }
     private void setTabs()
     {
-        new ITabbar(this).addTab("Home", R.drawable.tab_home, ArrowsActivity.class);
-        new ITabbar(this).addTab("Search", R.drawable.tab_search, OptionsActivity.class);
-        new ITabbar(this).addTab("Home", R.drawable.tab_home, ArrowsActivity.class);
-        new ITabbar(this).addTab("Search", R.drawable.tab_search, OptionsActivity.class);
+        new Tabbar(this).addTab("Home", R.drawable.tab_home, ArrowsActivity.class);
+        new Tabbar(this).addTab("Search", R.drawable.tab_search, OptionsActivity.class);
+        new Tabbar(this).addTab("Home", R.drawable.tab_home, ArrowsActivity.class);
+        new Tabbar(this).addTab("Search", R.drawable.tab_search, OptionsActivity.class);
     }
 
 }

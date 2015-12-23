@@ -6,9 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import cn.yan96in.sample.topreacher.TopReacherActivity;
-import cn.yan96in.sample.ui.IEditTextActivity;
+import cn.yan96in.sample.ui.EditTextActivity;
 import cn.yan96in.sample.ui.IndexableListViewActivity;
 import cn.yan96in.sample.ui.TabBarActivity;
+import cn.yan96in.sample.ui.WheelViewActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -22,9 +23,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initView() {
          findViewById(R.id.tabbar).setOnClickListener(this);
         findViewById(R.id.indexable_listview).setOnClickListener(this);
-        findViewById(R.id.i_edit_text).setOnClickListener(this);
-        findViewById(R.id.i_top_reacher).setOnClickListener(this);
-//        findViewById(R.id.tabbar).setOnClickListener(this);
+        findViewById(R.id.text_label).setOnClickListener(this);
+        findViewById(R.id.top_reacher).setOnClickListener(this);
+        findViewById(R.id.wheel_view).setOnClickListener(this);
 //        findViewById(R.id.tabbar).setOnClickListener(this);
 //        findViewById(R.id.tabbar).setOnClickListener(this);
 
@@ -40,10 +41,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.indexable_listview:
                 startActivity(IndexableListViewActivity.class);
                 break;
-            case R.id.i_edit_text:
-                startActivity(IEditTextActivity.class);
-            case R.id.i_top_reacher:
+            case R.id.text_label:
+                startActivity(EditTextActivity.class);
+                break;
+            case R.id.top_reacher:
                 startActivity(TopReacherActivity.class);
+                break;
+            case R.id.wheel_view:
+                startActivity(WheelViewActivity.class);
+                break;
         }
     }
 

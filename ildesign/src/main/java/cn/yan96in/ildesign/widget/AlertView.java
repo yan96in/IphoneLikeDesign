@@ -22,13 +22,13 @@ import java.util.Arrays;
 import java.util.List;
 
 import cn.yan96in.ildesign.R;
-import cn.yan96in.ildesign.adapter.IAlertViewAdapter;
+import cn.yan96in.ildesign.adapter.AlertViewAdapter;
 import cn.yan96in.ildesign.listener.OnDismissListener;
 import cn.yan96in.ildesign.listener.OnItemClickListener;
-import cn.yan96in.ildesign.util.IAlertAnimateUtil;
+import cn.yan96in.ildesign.util.AlertAnimateUtil;
 
 
-public class IAlertView {
+public class AlertView {
     public enum Style{
         ActionSheet,
         Alert
@@ -67,7 +67,7 @@ public class IAlertView {
     private Animation inAnim;
     private int gravity = Gravity.CENTER;
 
-    public IAlertView(String title, String msg, String cancel, String[] destructive, String[] others, Context context, Style style, OnItemClickListener onItemClickListener){
+    public AlertView(String title, String msg, String cancel, String[] destructive, String[] others, Context context, Style style, OnItemClickListener onItemClickListener){
         this.context = context;
         if(style != null)this.style = style;
         this.onItemClickListener = onItemClickListener;
@@ -155,12 +155,12 @@ public class IAlertView {
             tvAlert.setOnClickListener(new OnTextClickListener(CANCELPOSITION));
             alertButtonListView.addFooterView(itemView);
         }
-        IAlertViewAdapter adapter = new IAlertViewAdapter(mDatas,mDestructive);
+        AlertViewAdapter adapter = new AlertViewAdapter(mDatas,mDestructive);
         alertButtonListView.setAdapter(adapter);
         alertButtonListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                if(onItemClickListener != null)onItemClickListener.onItemClick(IAlertView.this,position);
+                if(onItemClickListener != null)onItemClickListener.onItemClick(AlertView.this,position);
                 dismiss();
             }
         });
@@ -243,7 +243,7 @@ public class IAlertView {
     }
     protected void initEvents() {
     }
-    public IAlertView addExtView(View extView){
+    public AlertView addExtView(View extView){
         loAlertHeader.addView(extView);
         return this;
     }
@@ -284,7 +284,7 @@ public class IAlertView {
                         decorView.removeView(rootView);
                         isDismissing = false;
                         if (onDismissListener != null) {
-                            onDismissListener.onDismiss(IAlertView.this);
+                            onDismissListener.onDismiss(AlertView.this);
                         }
                     }
                 });
@@ -299,16 +299,16 @@ public class IAlertView {
         isDismissing = true;
     }
     public Animation getInAnimation() {
-        int res = IAlertAnimateUtil.getAnimationResource(this.gravity, true);
+        int res = AlertAnimateUtil.getAnimationResource(this.gravity, true);
         return AnimationUtils.loadAnimation(context, res);
     }
 
     public Animation getOutAnimation() {
-        int res = IAlertAnimateUtil.getAnimationResource(this.gravity, false);
+        int res = AlertAnimateUtil.getAnimationResource(this.gravity, false);
         return AnimationUtils.loadAnimation(context, res);
     }
 
-    public IAlertView setOnDismissListener(OnDismissListener onDismissListener) {
+    public AlertView setOnDismissListener(OnDismissListener onDismissListener) {
         this.onDismissListener = onDismissListener;
         return this;
     }
@@ -321,7 +321,7 @@ public class IAlertView {
         }
         @Override
         public void onClick(View view) {
-            if(onItemClickListener != null)onItemClickListener.onItemClick(IAlertView.this,position);
+            if(onItemClickListener != null)onItemClickListener.onItemClick(AlertView.this,position);
             dismiss();
         }
     }
@@ -331,7 +331,7 @@ public class IAlertView {
         params.setMargins(margin_alert_left_right,0,margin_alert_left_right,marginBottom);
         contentContainer.setLayoutParams(params);
     }
-    public IAlertView setCancelable(boolean isCancelable) {
+    public AlertView setCancelable(boolean isCancelable) {
         View view = rootView.findViewById(R.id.outmost_container);
 
         if (isCancelable) {

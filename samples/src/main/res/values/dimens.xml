@@ -4,4 +4,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 <!--top reacher-->
     <dimen name="navigation_drawer_width">240dp</dimen>
+    <!-- wheel view-->
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

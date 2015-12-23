@@ -12,13 +12,13 @@ import android.view.animation.AnticipateOvershootInterpolator;
 import android.widget.ImageView;
 
 
-import cn.yan96in.ildesign.util.ITopReacher;
+import cn.yan96in.ildesign.util.TopReacher;
 import cn.yan96in.sample.R;
 
 
 public class CustomAnimationActivity extends Activity {
 
-    private ITopReacher mITopReacher;
+    private TopReacher mTopReacher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,19 +29,19 @@ public class CustomAnimationActivity extends Activity {
         view.setBackgroundResource(R.drawable.custom_button_selector);
         view.setScaleType(ImageView.ScaleType.CENTER);
 
-        mITopReacher = new ITopReacher(this);
-        mITopReacher.canTouchableBackView(true);
-        mITopReacher.setBackImageResource(R.drawable.tiles);
+        mTopReacher = new TopReacher(this);
+        mTopReacher.canTouchableBackView(true);
+        mTopReacher.setBackImageResource(R.drawable.tiles);
         // Should call before makeHoverView!
-        mITopReacher.setHoverView(view, android.R.drawable.ic_partial_secure, android.R.drawable.ic_secure);
-        mITopReacher.makeHoverView(ITopReacher.Position.CENTER);
-        mITopReacher.setCustomSlideInAnimation(1000, new AnticipateOvershootInterpolator(), fromLeftAnimation());
-        mITopReacher.setCustomSlideOutAnimation(1000, new AnticipateOvershootInterpolator(), toRightAnimation());
+        mTopReacher.setHoverView(view, android.R.drawable.ic_partial_secure, android.R.drawable.ic_secure);
+        mTopReacher.makeHoverView(TopReacher.Position.CENTER);
+        mTopReacher.setCustomSlideInAnimation(1000, new AnticipateOvershootInterpolator(), fromLeftAnimation());
+        mTopReacher.setCustomSlideOutAnimation(1000, new AnticipateOvershootInterpolator(), toRightAnimation());
 
         findViewById(R.id.switch_hover).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mITopReacher.switchHover();
+                mTopReacher.switchHover();
             }
         });
     }

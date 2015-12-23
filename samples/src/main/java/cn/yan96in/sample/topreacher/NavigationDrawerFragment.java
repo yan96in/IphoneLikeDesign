@@ -23,7 +23,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import cn.yan96in.ildesign.util.ITopReacher;
+import cn.yan96in.ildesign.util.TopReacher;
 import cn.yan96in.sample.R;
 
 /**
@@ -62,7 +62,7 @@ public class NavigationDrawerFragment extends Fragment {
     private boolean mFromSavedInstanceState;
     private boolean mUserLearnedDrawer;
 
-    private ITopReacher mITopReacher;
+    private TopReacher mTopReacher;
 
     public NavigationDrawerFragment() {
     }
@@ -80,10 +80,10 @@ public class NavigationDrawerFragment extends Fragment {
             mCurrentSelectedPosition = savedInstanceState.getInt(STATE_SELECTED_POSITION);
             mFromSavedInstanceState = true;
         }
-        mITopReacher = new ITopReacher(getActivity());
-        mITopReacher.makeHoverView(ITopReacher.Position.LEFT);
-        mITopReacher.setBackColor(Color.BLACK);
-        mITopReacher.canTouchableBackView(false);
+        mTopReacher = new TopReacher(getActivity());
+        mTopReacher.makeHoverView(TopReacher.Position.LEFT);
+        mTopReacher.setBackColor(Color.BLACK);
+        mTopReacher.canTouchableBackView(false);
 
         // Select either the default item (0) or the last selected item.
         selectItem(mCurrentSelectedPosition);

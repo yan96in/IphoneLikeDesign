@@ -14,10 +14,10 @@ import cn.yan96in.ildesign.R;
 /**
  * Created by Sai on 15/8/9.
  */
-public class IAlertViewAdapter extends BaseAdapter {
+public class AlertViewAdapter extends BaseAdapter {
     private List<String> mDatas;
     private List<String> mDestructive;
-    public IAlertViewAdapter(List<String> datas, List<String> destructive){
+    public AlertViewAdapter(List<String> datas, List<String> destructive){
         this.mDatas =datas;
         this.mDestructive =destructive;
     }

@@ -1,8 +1,6 @@
 package cn.yan96in.ildesign.widget;
 
-import android.app.Activity;
 import android.app.TabActivity;
-import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,10 +10,10 @@ import android.widget.TextView;
 
 import cn.yan96in.ildesign.R;
 
-public class ITabbar {
+public class Tabbar {
     TabActivity context;
 
-    public ITabbar(TabActivity context) {
+    public Tabbar(TabActivity context) {
         this.context = context;
     }
 

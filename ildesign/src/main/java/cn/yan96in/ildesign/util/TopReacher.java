@@ -26,7 +26,7 @@ import cn.yan96in.ildesign.R;
 import cn.yan96in.ildesign.listener.BackAnimationListener;
 import cn.yan96in.ildesign.listener.HoverAnimationListener;
 
-public class ITopReacher {
+public class TopReacher {
     /**
      * position of HoverView
      * */
@@ -67,7 +67,7 @@ public class ITopReacher {
      * Constructor
      * @param context context
      * */
-    public ITopReacher(Context context) {
+    public TopReacher(Context context) {
         this.mContext = context;
         mRootView = ((ViewGroup)((Activity)mContext).getWindow().getDecorView());
         mContentView = mRootView.findViewById(android.R.id.content);

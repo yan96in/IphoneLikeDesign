@@ -7,25 +7,25 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import cn.yan96in.ildesign.util.ITopReacher;
+import cn.yan96in.ildesign.util.TopReacher;
 import cn.yan96in.sample.R;
 
 public class TopReacherActivity extends Activity {
 
-    private ITopReacher mITopReacher;
+    private TopReacher mTopReacher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
-        mITopReacher = new ITopReacher(this);
-        mITopReacher.setBackImageResource(R.drawable.tiles);
-        mITopReacher.canTouchableBackView(true);
+        setContentView(R.layout.activity_top_reacher);
+        mTopReacher = new TopReacher(this);
+        mTopReacher.setBackImageResource(R.drawable.tiles);
+        mTopReacher.canTouchableBackView(true);
 
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mITopReacher.switchBack();
+                mTopReacher.switchBack();
             }
         });
         findViewById(R.id.fragment).setOnClickListener(new View.OnClickListener() {

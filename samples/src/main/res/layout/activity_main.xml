@@ -15,14 +15,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="IndexableListView"/>
-    <Button android:id="@+id/i_edit_text"
+    <Button android:id="@+id/text_label"
         android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IEditText"/>
-    <Button android:id="@+id/i_top_reacher"
+        android:text="TextLabel"/>
+    <Button android:id="@+id/top_reacher"
         android:layout_below="@+id/tabbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ITopReacher"/>
+        android:text="TopReacher"/>
+    <Button android:id="@+id/wheel_view"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tabbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WheelView"/>
+
 </RelativeLayout>

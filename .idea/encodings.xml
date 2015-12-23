@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/ildesign/src/main/java/cn/yan96in/ildesign/adapter/IAlertViewAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ildesign/src/main/java/cn/yan96in/ildesign/adapter/AlertViewAdapter.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ildesign/src/main/java/cn/yan96in/ildesign/listener/OnDismissListener.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ildesign/src/main/java/cn/yan96in/ildesign/listener/OnItemClickListener.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/ildesign/src/main/java/cn/yan96in/ildesign/util/IAlertAnimateUtil.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/ildesign/src/main/java/cn/yan96in/ildesign/widget/IAlertView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ildesign/src/main/java/cn/yan96in/ildesign/util/AlertAnimateUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ildesign/src/main/java/cn/yan96in/ildesign/widget/AlertView.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ildesign/src/main/res/anim/fade_in_center.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ildesign/src/main/res/anim/fade_out_center.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/ildesign/src/main/res/anim/slide_in_bottom.xml" charset="GBK" />
@@ -30,7 +30,7 @@
     <file url="file://$PROJECT_DIR$/samples/src/main/java/cn/yan96in/sample/topreacher/DrawerActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/samples/src/main/java/cn/yan96in/sample/topreacher/NavigationDrawerFragment.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/samples/src/main/java/cn/yan96in/sample/topreacher/TopReacherActivity.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/samples/src/main/java/cn/yan96in/sample/ui/IAlertViewActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/java/cn/yan96in/sample/ui/AlertViewActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/custom_button_pressed.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/custom_button_selected.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/custom_button_selector.xml" charset="GBK" />
@@ -39,11 +39,11 @@
     <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/ic_launcher.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/tile.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/samples/src/main/res/drawable/tiles.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/activity_alert_view.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/activity_back_and_hover.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/activity_custom_animation.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/activity_drawer.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/activity_i_alert_view.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/activity_my.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/activity_top_reacher.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/alertext_form.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/fragment_drawer.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/samples/src/main/res/layout/fragment_navigation_drawer.xml" charset="GBK" />
